@@ -87,10 +87,10 @@
           </a>
           <ul class="sidenav-second-level collapse" id="collapseExamplePages">
             <li>
-              <a href="login.html">Створення актових записів</a>
-            </li>
+              <a href="akt_create.html">Створення актових записів</a>
+              </li>
             <li>
-              <a href="register.html">Друк актових записів</a>
+              <a href="akt_print.html">Друк актових записів</a>
             </li>
             <li>
               <a href="forgot-password.html">Внесення правок до актових записів</a>
@@ -221,44 +221,122 @@
               <div class="col-md-6">
                 <label for="Date">Дата народження</label>
                 <input class="form-control" id="Date" type="date" aria-describedby="nameHelp" placeholder="Оберіть дату народження дитини">
-              </div>  
+              </div>
+                
               <div class="col-md-6">
-                <label for="Place">Стать дитини</label>
-                <input class="form-control" id="Place" type="radio" aria-describedby="nameHelp" value = "male">
-                <input class="form-control" id="Place" type="radio" aria-describedby="nameHelp" value = "female">
+                <div class = "form-group">
+                <label for="Sex">Стать дитини</label>
+                <div class = "radio">
+                    <label><input type = "radio"> Жінка</label>
+                </div>
+                <div class = "radio">
+                    <label><input type = "radio"> Чоловік</label>
+                </div>
+                </div>    
               </div>
               <div class="col-md-6">
-                <label for="Date">Дата народження</label>
-                <input class="form-control" id="Date" type="date" aria-describedby="nameHelp" placeholder="Enter last name">
-              </div>     
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col-md-6">
-                <label for="exampleInputPassword1">Password</label>
-                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                <div class = "form-group">
+                <label for="Not_live">Дитина жива?</label>
+                <div class = "checkbox">
+                    <label><input type = "checkbox"> Мертвонароджена</label>
+                </div>    
+                </div>    
+              </div  >
+              <div class="col-md-12">
+                <label for="id_woman">Ідентифікаційний код жінки</label>
+                <input class="form-control" id="id_woman" type="text" aria-describedby="nameHelp" placeholder="Введіть ідентифікаційний код жінки">
               </div>
               <div class="col-md-6">
-                <label for="exampleConfirmPassword">Confirm password</label>
-                <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
+                <label for="LastName_woman">Прізвище</label>
+                <input class="form-control" id="LastName_woman" type="text" aria-describedby="nameHelp" placeholder="Прізвище жінки">
               </div>
+              <div class="col-md-6">
+                <label for="Name_woman">Ім'я</label>
+                <input class="form-control" id="Name_woman" type="text" aria-describedby="nameHelp" placeholder="Ім'я жінки">
+              </div>
+              <div class="col-md-12">
+                <label for="id_man">Ідентифікаційний код чоловіка</label>
+                <input class="form-control" id="id_man" type="text" aria-describedby="nameHelp" placeholder="Введіть ідентифікаційний код чоловіка">
+              </div>
+              <div class="col-md-6">
+                <label for="LastName_man">Прізвище</label>
+                <input class="form-control" id="LastName_man" type="text" aria-describedby="nameHelp" placeholder="Прізвище чоловіка">
+              </div>
+              <div class="col-md-6">
+                <label for="Name_man">Ім'я</label>
+                <input class="form-control" id="Name_man" type="text" aria-describedby="nameHelp" placeholder="Ім'я чоловіка">
+              </div>        
+              <div class="col-md-12">
+                <label for="Place">Місце реєстрації</label>
+                <input class="form-control" id="Place" type="text" aria-describedby="nameHelp" placeholder="Введіть місце рієстрації">
+              </div>   
             </div>
           </div>
             
-             <a class="btn btn-primary btn-block" href="login.html">Register</a>
+             <a class="btn btn-primary btn-block" href="login.html">Зареєструвати дитину</a>
         </form>
             </div>  
     </div>
         </div>
       </div>
     <div id="shlub" class="tab-pane fade">
-      <h3>Укладення шлюбу</h3>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      
+
+        <div class = "container">
+            <div class = "card mt-3">
+                <div class="card-header">Актовий запис про шлюб</div>
+                <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col-md-12">
+                <label for="id_woman">Ідентифікаційний код жінки</label>
+                <input class="form-control" id="id_woman" type="text" aria-describedby="nameHelp" placeholder="Введіть ідентифікаційний код жінки">
+              </div>
+              <div class="col-md-6">
+                <label for="LastName_woman">Прізвище</label>
+                <input class="form-control" id="LastName_woman" type="text" aria-describedby="nameHelp" placeholder="Прізвище жінки">
+              </div>
+              <div class="col-md-6">
+                <label for="Name_woman">Ім'я</label>
+                <input class="form-control" id="Name_woman" type="text" aria-describedby="nameHelp" placeholder="Ім'я жінки">
+              </div>
+              <div class="col-md-12">
+                <label for="id_man">Ідентифікаційний код чоловіка</label>
+                <input class="form-control" id="id_man" type="text" aria-describedby="nameHelp" placeholder="Введіть ідентифікаційний код чоловіка">
+              </div>
+              <div class="col-md-6">
+                <label for="LastName_man">Прізвище</label>
+                <input class="form-control" id="LastName_man" type="text" aria-describedby="nameHelp" placeholder="Прізвище чоловіка">
+              </div>
+              <div class="col-md-6">
+                <label for="Name_man">Ім'я</label>
+                <input class="form-control" id="Name_man" type="text" aria-describedby="nameHelp" placeholder="Ім'я чоловіка">
+              </div>    
+              <div class="col-md-6">
+                <label for="Place">Місце реєстрації</label>
+                <input class="form-control" id="Place" type="text" aria-describedby="nameHelp" placeholder="Введіть місце рієстрації">
+              </div>
+              <div class="col-md-6">
+                <label for="Date">Дата реєстрації</label>
+                <input class="form-control" id="Date" type="date" aria-describedby="nameHelp" placeholder="Оберіть дату реєстрації">
+              </div>  
+              <div class="col-md-6">
+                <label for="LastName_woman_new">Прізвище жінки (нове)</label>
+                <input class="form-control" id="LastName_woman_new" type="text" aria-describedby="nameHelp" placeholder="Введіть прізвище жінки(нове)">
+              </div> 
+              <div class="col-md-6">
+                <label for="LastName_man_new">Прізвище чоловіка (нове)</label>
+                <input class="form-control" id="LastName_man_new" type="text" aria-describedby="nameHelp" placeholder="Введіть прізвище чоловіка (нове)">
+              </div>    
+            </div>
+          </div>
+            
+             <a class="btn btn-primary btn-block" href="login.html">Зареєструвати шлюб</a>
+        </form>
+            </div>  
+    </div>
+        </div>
     </div>
     <div id="razvod" class="tab-pane fade">
       <h3>Розірвання шлюбу</h3>
