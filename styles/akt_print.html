@@ -56,18 +56,7 @@
             <span class="nav-link-text">Свідоцтва</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Витяги</span>
-          </a>
-        </li>  
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Звіти</span>
-          </a>
-        </li>  
+        
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
             <i class="fa fa-fw fa-wrench"></i>
@@ -181,7 +170,7 @@
           <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
-                <tr>
+                  <tr>
                   <th>Ім'я</th>
                   <th>Прізвище</th>
                   <th>Ідентифікаційний код</th>
@@ -201,7 +190,8 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr>
+                    
+                <tr data-toggle="modal" data-target="#humanModal">
                   <td>Наталя</td>
                   <td>Мотузенко</td>
                   <td>56789786</td>
@@ -209,478 +199,7 @@
                   <td>2011/04/25</td>
                   <td>Київ</td>
                 </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Наталя</td>
-                  <td>Мотузенко</td>
-                  <td>56789786</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>Київ</td>
-                </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Наталя</td>
-                  <td>Мотузенко</td>
-                  <td>56789786</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>Київ</td>
-                </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Наталя</td>
-                  <td>Мотузенко</td>
-                  <td>56789786</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>Київ</td>
-                </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Наталя</td>
-                  <td>Мотузенко</td>
-                  <td>56789786</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>Київ</td>
-                </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>
-                <tr>
-                  <td>Наталя</td>
-                  <td>Мотузенко</td>
-                  <td>56789786</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>Київ</td>
-                </tr>
-                <tr>
-                  <td>Іван</td>
-                  <td>Дикий</td>
-                  <td>45678976</td>
-                  <td>63</td>
-                  <td>2011/07/25</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Вадим</td>
-                  <td>Волобуєв</td>
-                  <td>56467867</td>
-                  <td>66</td>
-                  <td>2009/01/12</td>
-                  <td>Дніпро</td>
-                </tr>
-                <tr>
-                  <td>Леся</td>
-                  <td>Охримчук</td>
-                  <td>4657678</td>
-                  <td>22</td>
-                  <td>2012/03/29</td>
-                  <td>Харків</td>
-                </tr>
-                <tr>
-                  <td>Микола</td>
-                  <td>Никонюк</td>
-                  <td>5677889</td>
-                  <td>33</td>
-                  <td>2008/11/28</td>
-                  <td>Озерна</td>
-                </tr>
-                <tr>
-                  <td>Настя</td>
-                  <td>Нивкрита</td>
-                  <td>46657689</td>
-                  <td>61</td>
-                  <td>2012/12/02</td>
-                  <td>Запоріжжя</td>
-                </tr>
-                <tr>
-                  <td>Кирило</td>
-                  <td>Лещенко</td>
-                  <td>576788</td>
-                  <td>59</td>
-                  <td>2012/08/06</td>
-                  <td>Львів</td>
-                </tr>
-                <tr>
-                  <td>Мифодій</td>
-                  <td>Колесник</td>
-                  <td>465687</td>
-                  <td>55</td>
-                  <td>2010/10/14</td>
-                  <td>Одеса</td>
-                </tr>
-                <tr>
-                  <td>Андрій</td>
-                  <td>Запара</td>
-                  <td>567890</td>
-                  <td>39</td>
-                  <td>2009/09/15</td>
-                  <td>Біла Церква</td>
-                </tr>
-                <tr>
-                  <td>Владислав</td>
-                  <td>Веремієнко</td>
-                  <td>54678</td>
-                  <td>23</td>
-                  <td>Дніпро</td>
-                  <td>$103,600</td>
-                </tr>  
+                   
                 
               </tbody>
             </table>
@@ -722,6 +241,255 @@
         </div>
       </div>
     </div>
+      
+      
+      
+    <div class="modal fade" id="humanModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="exampleModalLabel">Сторінка громадянина</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <br>
+              <div class = "row">
+              <div class = "col-md-8">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header "> Персональна інформація </div>
+                  <div class="card-body">
+                  <div class="container">
+                  
+                  <div class="col-md-12"><b>Ім'я:</b> Вася </div>
+                  <div class="col-md-12"><b>По-батькові:</b> Миколайович</div>
+                  <div class="col-md-12"><b>Прізвище:</b> Іванов</div>
+            
+            
+                  <div class="col-md-12"><b>Дата народження: </b>12-02-2017</div>
+                  <div class="col-md-12 "><b>Місце народження:</b> м. Київ, вул. Ольжича 6</div>  
+                  <div class="col-md-12"><b>Зареєстровано відділенням:</b> Київським СПОТЛ</div>
+                   
+                  <div class="col-md-12"><b>Серія паспорту:</b> ТТ 9865</div> 
+                  <div class="col-md-12"><b>Ідентифікаційний код :</b> 465787890876</div>        
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              <div class = "col-md-4">
+                
+                <img class='img-fluid w-100' src="http://cameracornergreenbay.com/wp-content/uploads/2017/04/passport2.png" alt="" />
+
+                   
+              </div>
+              </div>
+              
+              <div class = "row">
+              <div class = "col-md-12">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header ">Сімейне становище </div>
+                  <div class="card-body">
+                  <div class="container">
+                  <div class = "row">
+                      
+                      <div class = "col-md-12">
+                           <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                              <th>Ім'я</th>
+                              <th>Прізвище</th>
+                              <th>Дата початку шлюбу</th>
+                              <th>Дата кінця шлюбу</th>   
+                              <th>Діти</th>      
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                              <td>Катерина</td>
+                              <td>Іванова</td>
+                              <td>12-02-2018</td>
+                              <td></td>   
+                              <td>1</td>      
+                              </tr>  
+                                 
+                             </tbody>
+                               </table></div>
+                          
+                      </div>
+                      </div>      
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              </div>
+              
+              
+              
+              
+              
+              <div class = "row">
+              <div class = "col-md-12">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header ">Діти </div>
+                  <div class="card-body">
+                  <div class="container">
+                  <div class = "row">
+                      
+                      <div class = "col-md-12">
+                           <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                              <th>Ім'я</th>
+                              <th>Прізвище</th>
+                              <th>Дата народження</th>   
+                              <th>Ім'я матері</th>  
+                              <th>Прізвище матері</th>        
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                              <td>Оля</td>
+                              <td>Іванова</td>
+                              <td>12-02-2018</td>
+                              <td>Катерина</td>   
+                              <td>Іванова</td>      
+                              </tr>  
+                                 
+                             </tbody>
+                               </table></div>
+                          
+                      </div>
+                      </div>      
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              </div>
+              
+              
+              
+              <div class = "row">
+              <div class = "col-md-12">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header ">Місце проживання </div>
+                  <div class="card-body">
+                  <div class="container">
+                  <div class = "row">
+                      
+                      <div class = "col-md-12">
+                           <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                              <th>Нас. пункт</th>
+                              <th>Адреса</th>   
+                              <th>Поч проживання</th>  
+                              <th>Кін проживання</th>        
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                              <td>м. Київ</td>
+                              <td>вул. Ольжича 6</td>
+                              <td>12-02-2017</td>   
+                              <td>12-02-2017</td>      
+                              </tr>  
+                              <tr>
+                              <td>м. Київ</td>
+                              <td>вул. Ольжича 7</td>
+                              <td>12-02-2017</td>   
+                              <td> </td>      
+                              </tr>     
+                                 
+                             </tbody>
+                               </table></div>
+                          
+                      </div>
+                      </div>      
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              </div>
+              
+              
+              
+              <div class = "row">
+              <div class = "col-md-12">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header ">Зміна імені або прізвища </div>
+                  <div class="card-body">
+                  <div class="container">
+                  <div class = "row">
+                      
+                      <div class = "col-md-12">
+                           <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                              <th>Ім'я / Прізвище</th>
+                              <th>До зміни</th>   
+                              <th>Після зміни</th>  
+                              <th>Дата зміни</th>        
+                              </tr>
+                             </thead>
+                             <tbody>
+                              <tr>
+                              <td>Прізвище</td>
+                              <td>Бочаров</td>
+                              <td>Іванов</td>   
+                              <td>12-02-2017</td>      
+                              </tr>  
+                                 
+                                 
+                             </tbody>
+                               </table></div>
+                          
+                      </div>
+                      </div>      
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              </div>
+            
+            
+            
+            </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>  
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
