@@ -36,19 +36,7 @@
             <span class="nav-link-text">Заявки</span>
           </a>
         </li>
-    
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Свідоцтва</span>
-          </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="tables.html">
-            <i class="fa fa-fw fa-table"></i>
-            <span class="nav-link-text">Витяги</span>
-          </a>
-        </li>  
+      
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="tables.html">
             <i class="fa fa-fw fa-table"></i>
@@ -208,7 +196,8 @@
           <div class="container">
   <h1>Вікно заявок</h1>
   <div class="items">
-    <input id="item1" type="checkbox" checked>
+    
+    <input id="item1" type="checkbox" class="openmodal">
     <label for="item1">Заявка 1</label>
 
     <input id="item2" type="checkbox">
@@ -230,6 +219,7 @@
     <h2 class="undone" aria-hidden="true">Не прочитані</h2>
   </div>
 </div>
+
         </div>
         <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
       </div>
@@ -277,6 +267,103 @@
         </div>
       </div>
     </div>
+      
+    
+      
+      
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title " id="exampleModalLabel">Заявка від громадянина</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <br>
+              <div class = "row">
+              <div class = "col-md-12">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header ">Текст заявки </div>
+                  <div class="card-body">
+                  <div class="container">
+                  <div class = "row">
+                      
+                      <div class = "col-md-6">
+                          
+                          Процедура: <a href = "akt_create.html"> Зареєструвати дитину </a><br>
+                          Дата: 12-02-2017<br>
+                          Документи, що необхідно надати: паспорти та ідентифікаційний код кожного з батьків, довідка з лікарні 
+                          
+                        
+                          
+                      </div>
+                      <div class = "col-md-6">
+                          
+                          Процедура: <a href = "akt_create.html"> Зареєструвати шлюб </a><br>
+                          Дата: 12-02-2016<br>
+                          Документи, що необхідно надати: паспорти та ідентифікаційний код нареченого та нареченої
+                        
+                          
+                      </div>
+                      
+                      </div>      
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              </div>
+              
+              <div class = "row">
+              <div class = "col-md-8">
+              <div class="container-fluid">
+      
+                 <div class="card mb-3">
+                  <div class="card-header "> Персональна інформація </div>
+                  <div class="card-body">
+                  <div class="container">
+                  
+                  <div class="col-md-12"><b>Ім'я:</b> Вася </div>
+                  <div class="col-md-12"><b>По-батькові:</b> Миколайович</div>
+                  <div class="col-md-12"><b>Прізвище:</b> Іванов</div>
+            
+            
+                  <div class="col-md-12"><b>Дата народження: </b>12-02-2017</div>
+                  <div class="col-md-12 "><b>Місце народження:</b> м. Київ, вул. Ольжича 6</div>  
+                  <div class="col-md-12"><b>Зареєстровано відділенням:</b> Київським СПОТЛ</div>
+                   
+                  <div class="col-md-12"><b>Серія паспорту:</b> ТТ 9865</div> 
+                  <div class="col-md-12"><b>Ідентифікаційний код :</b> 465787890876</div>        
+                      
+                      </div>
+                     </div>
+                  </div>
+                
+              </div>
+              </div>   
+              <div class = "col-md-4">
+                
+                <img class='img-fluid w-100' src="http://cameracornergreenbay.com/wp-content/uploads/2017/04/passport2.png" alt="" />
+
+                   
+              </div>
+              </div>
+              
+  
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>      
+      
+      
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -292,6 +379,21 @@
     <script src="js/sb-admin-datatables.min.js"></script>
     <script src="js/sb-admin-charts.min.js"></script>
   </div>
+    
+    
+    <script>
+        $('.openmodal').click(function(){
+          if($(this).is(':checked')) { 
+            
+             $('#myModal').modal('show');
+              $(this).removeAttr('checked'); 
+           } else {
+             $('#myModal').modal('hide');
+              $(this).setAttribute('checked');   
+           }
+        });
+
+    </script>
 </body>
 
 </html>
